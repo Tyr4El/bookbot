@@ -1,1 +1,4 @@
 /books
+.idea
+__pycache__
+_pycache_

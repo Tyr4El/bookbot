@@ -11,3 +11,17 @@ def counting_char(string_book):
         else :
             tmp_dict[lwr_convert[i]]=1
     return tmp_dict
+## proposed by AI
+#def sorting_resultset(dict_result):
+#    sorted_result=sorted(dict_result.items(), key=lambda x: x[1], reverse=True)
+#    return sorted_result
+def sort_on(dict):
+    return dict["count"]
+def sorting_results(list_working):
+    return list_working.sort(reverse=True, key=sort_on)
+def transform_dict(x_dict):
+    list_dict=[]
+    for i in x_dict:
+        list_dict.append({"char":i,"count":x_dict[i]})
+    sorting_results(list_dict)
+    return list_dict
